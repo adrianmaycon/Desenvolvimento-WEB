@@ -95,4 +95,29 @@ function addBooksToPage() {
   });
 }
 
+function viewDataForm() {
+  const form = document.getElementById('contactForm');
+  const formMessage = document.getElementById('formMessage');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita o envio padrão do formulário
+
+    // Captura os dados do formulário
+    const formData = new FormData(form);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+
+    // Constrói a mensagem a ser exibida na tag <p> com id "formMessage"
+    const messageText = `Nome: ${name}<br>Email: ${email}<br>Mensagem: ${message}`;
+
+    // Exibe a mensagem dentro do elemento <p id="formMessage">
+    formMessage.innerHTML = messageText;
+
+    // Limpar o formulário após exibir a mensagem (opcional)
+    form.reset();
+  })
+}
+
 document.addEventListener('DOMContentLoaded', addBooksToPage);
+document.addEventListener('DOMContentLoaded', viewDataForm);
