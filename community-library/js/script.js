@@ -87,6 +87,7 @@ function addBooksToPage() {
           <h3>${book.title}</h3>
           <p>Autor: ${book.author}</p>
           <p>Descrição: ${book.description}</p>
+          <a href="detailsBook.html?bookId=${book.title}"><button type="button">Ver Livro</button></a>
         </div>
       </div>
     `;
@@ -119,5 +120,31 @@ function viewDataForm() {
   })
 }
 
+
+// Função para obter o valor dos parâmetros da URL
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+function addDetailsBook() {  
+// Obtém o título do livro da Url
+const bookId = getQueryParam('bookId');
+
+// Encontrar o livro correspondente ao bookId
+const bookData = books.find(book => book.title === bookId);
+
+// Exibir os detalhes do livro
+if (bookData) {
+  document.getElementById('bookImage').src = bookData.imgSrc;
+  document.getElementById('bookTitle').textContent = bookData.title;
+  document.getElementById('bookAuthor').textContent = bookData.author;
+  document.getElementById('bookDescription').textContent = bookData.description;
+} else {
+  document.getElementById('bookTitle').textContent = "Livro não encontrado";
+}
+}
+
 document.addEventListener('DOMContentLoaded', addBooksToPage);
 document.addEventListener('DOMContentLoaded', viewDataForm);
+document.addEventListener('DOMContentLoaded', addDetailsBook);
