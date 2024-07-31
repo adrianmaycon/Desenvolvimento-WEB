@@ -1,3 +1,4 @@
+// Array de objetos representando livros
 const books = [
   {
     imgSrc: 'https://m.media-amazon.com/images/I/51XULadddlL.jpg',
@@ -85,13 +86,21 @@ const books = [
   },
 ];
 
-function addBooksToPage() {
+// Função para adicionar livros à página
+function addBooksToPage(filteredBooks = books) {
+  // Seleciona o elemento onde a lista de livros será exibida
   const bookList = document.querySelector('.book-list');
+  
+  // Limpa a lista de livros existente para evitar duplicação
+  bookList.innerHTML = '';
 
-  books.forEach(book => {
+  // Itera sobre a lista de livros filtrados e adiciona cada um ao DOM
+  filteredBooks.forEach(book => {
+    // Cria um novo elemento div para o livro
     const bookElement = document.createElement('div');
     bookElement.classList.add('book');
 
+    // Adiciona o conteúdo HTML para o livro
     bookElement.innerHTML = `
       <div class="flex">
         <img src="${book.imgSrc}" alt="">
@@ -104,14 +113,17 @@ function addBooksToPage() {
       </div>
     `;
 
+    // Adiciona o elemento do livro à lista de livros
     bookList.appendChild(bookElement);
   });
 }
 
+// Função para configurar o formulário de contato
 function viewDataForm() {
   const form = document.getElementById('contactForm');
   const formMessage = document.getElementById('formMessage');
 
+  // Adiciona um ouvinte de evento para o envio do formulário
   form.addEventListener('submit', function (event) {
     event.preventDefault(); // Evita o envio padrão do formulário
 
@@ -132,6 +144,20 @@ function viewDataForm() {
   })
 }
 
+// Função para pesquisar livros
+function searchBooks() {
+  // Seleciona o campo de entrada de pesquisa e obtém o valor
+  const searchInput = document.getElementById('searchInput');
+  const query = searchInput.value.toLowerCase();
+
+  // Filtra a lista de livros com base na consulta de pesquisa
+  const filteredBooks = books.filter(book => 
+    book.title.toLowerCase().includes(query)
+  )
+
+  // Atualiza a lista de livros exibida na página
+  addBooksToPage(filteredBooks);
+}
 
 // Função para obter o valor dos parâmetros da URL
 function getQueryParam(param) {
@@ -139,24 +165,33 @@ function getQueryParam(param) {
   return urlParams.get(param);
 }
 
+// Função para adicionar detalhes do livro na página
 function addDetailsBook() {
-  // Obtém o título do livro da Url
+  // Obtém o título do livro da URL
   const bookId = getQueryParam('bookId');
 
-  // Encontrar o livro correspondente ao bookId
+  // Encontra o livro correspondente ao bookId
   const bookData = books.find(book => book.title === bookId);
 
-  // Exibir os detalhes do livro
+  // Exibe os detalhes do livro
   if (bookData) {
     document.getElementById('bookImage').src = bookData.imgSrc;
     document.getElementById('bookTitle').textContent = `Livro: ${bookData.title}`;
     document.getElementById('bookAuthor').textContent = `Autor: ${bookData.author}`;
     document.getElementById('bookDescription').textContent = `Resumo: ${bookData.resume}`;
   } else {
+    // Caso o livro não seja encontrado, exibe uma mensagem de erro
     document.getElementById('bookTitle').textContent = "Livro não encontrado";
   }
 }
 
-document.addEventListener('DOMContentLoaded', addBooksToPage);
-document.addEventListener('DOMContentLoaded', viewDataForm);
-document.addEventListener('DOMContentLoaded', addDetailsBook);
+// Adiciona eventos de carregamento do DOM para funções específicas
+document.addEventListener('DOMContentLoaded', viewDataForm); // Configura o formulário de contato quando o DOM estiver carregado
+document.addEventListener('DOMContentLoaded', addDetailsBook); // Adiciona detalhes do livro quando o DOM estiver carregado
+document.addEventListener('DOMContentLoaded', function() {
+  // Adiciona livros à página ao carregar
+  addBooksToPage();
+
+  // Adiciona um evento para atualizar a lista de livros enquanto o usuário digita no campo de pesquisa
+  document.getElementById('searchInput').addEventListener('input', searchBooks);
+});
