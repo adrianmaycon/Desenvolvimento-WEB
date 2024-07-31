@@ -71,7 +71,7 @@ button:hover {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     overflow: hidden;
 }
@@ -195,4 +195,22 @@ footer {
     text-align: center;
     padding: 10px 0;
     width: 100%;
+}
+
+@media screen and (max-width: 900px ) {
+    .book-list {
+        grid-template-columns: 1fr;
+    }
+
+    .book-details {
+        flex-direction: column;
+    }
+
+    .book-details img {
+        margin-bottom: 25px;
+    }
+    
+    .flex {
+        margin: 0px 20px;
+    }
 }
