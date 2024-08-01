@@ -2,19 +2,28 @@
 <html lang="en">
 
 <head>
+    <!-- Define a codificação de caracteres usada no documento -->
     <meta charset="UTF-8">
+    <!-- Define o comportamento de escala para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página, que aparece na aba do navegador -->
     <title>Detalhes do Livro - Biblioteca Comunitária CCBJ</title>
+    <!-- Vincula o arquivo de estilo externo ao HTML -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Vincula o arquivo de script externo ao HTML -->
     <script src="js/script.js"></script>
 </head>
 
 <body>
+    <!-- Seção do cabeçalho do site -->
     <header>
         <div class="container">
+            <!-- Título principal da biblioteca -->
             <h1>Biblioteca Comunitária CCBJ</h1>
+            <!-- Navegação principal do site -->
             <nav>
                 <ul>
+                    <!-- Links para as páginas principais do site -->
                     <li><a href="index.html">Inicial</a></li>
                     <li><a href="about.html">Sobre</a></li>
                     <li><a href="contact.html">Contato</a></li>
@@ -23,20 +32,33 @@
         </div>
     </header>
 
+    <!-- Seção principal do conteúdo da página -->
     <main>
         <div class="container">
+            <!-- Contêiner para os detalhes do livro -->
             <div id="container-book-details" class="header-main">
+                <!-- Detalhes do livro -->
                 <div class="book-details">
-                    <img id="bookImage" src="" alt="Image do Livro" >
+                    <!-- Imagem do livro -->
+                    <img id="bookImage" src="" alt="Image do Livro">
 
                     <div>
+                        <!-- Título do livro -->
                         <h1 id="bookTitle"></h1>
+                        <!-- Autor do livro -->
                         <p id="bookAuthor"></p>
+                        <!-- Descrição do livro -->
                         <p id="bookDescription"></p>
                     </div>
                 </div>
 
-                <a class="btn-voltar" href="index.html">Voltar Página</a>
+                <!-- Botões para navegação e leitura do livro -->
+                <div class="flex">
+                    <!-- Botão para voltar à página inicial -->
+                    <a class="btn-voltar" href="index.html">Voltar Página</a>
+                    <!-- Botão para ler o livro, cujo link será definido pelo JavaScript -->
+                    <a id="readBookButton" class="btn-voltar" href="#" target="_blank">Ler Livro</a>
+                </div>
             </div>
         </div>
     </main>
