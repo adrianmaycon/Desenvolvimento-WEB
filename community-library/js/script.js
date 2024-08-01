@@ -1,6 +1,7 @@
 // Array de objetos representando livros
-const books = [
+const books = [ 
   {
+    pdf: "https://pnld.moderna.com.br/wp-content/uploads/2022/01/0099L21609130IM_Amostra_Dom-Quixote.pdf",
     imgSrc: 'https://m.media-amazon.com/images/I/51XULadddlL.jpg',
     title: 'Dom Quixote',
     author: 'Miguel de Cervantes',
@@ -8,6 +9,7 @@ const books = [
     resume: "A história do engenhoso fidalgo Dom Quixote e de seu fiel escudeiro Sancho Pança conquista leitores geração após geração. O clássico de Miguel de Cervantes é considerado o expoente máximo da literatura espanhola e, em 2002, foi eleito por uma comissão de escritores de 54 países o melhor livro de ficção de todos os tempos. Em homenagem aos 400 anos de morte de Miguel de Cervantes, a Nova Fronteira traz ao público esta edição especial, com a obra integral em dois volumes. O texto de Cervantes é acompanhado das belíssimas ilustrações do francês Gustave Doré, um dos mais fantásticos artistas do século XIX."
   },
   {
+    pdf: "https://pnld.moderna.com.br/wp-content/uploads/2022/01/0099L21609130IM_Amostra_Dom-Quixote.pdf",
     imgSrc: 'https://m.media-amazon.com/images/I/71Xta4Nf7uL._AC_UF1000,1000_QL80_.jpg',
     title: 'Orgulho e Preconceito',
     author: 'Jane Austen',
@@ -15,6 +17,7 @@ const books = [
     resume: "A história do engenhoso fidalgo Dom Quixote e de seu fiel escudeiro Sancho Pança conquista leitores geração após geração. O clássico de Miguel de Cervantes é considerado o expoente máximo da literatura espanhola e, em 2002, foi eleito por uma comissão de escritores de 54 países o melhor livro de ficção de todos os tempos. Em homenagem aos 400 anos de morte de Miguel de Cervantes, a Nova Fronteira traz ao público esta edição especial, com a obra integral em dois volumes. O texto de Cervantes é acompanhado das belíssimas ilustrações do francês Gustave Doré, um dos mais fantásticos artistas do século XIX."
   },
   {
+    pdf: "https://pnld.moderna.com.br/wp-content/uploads/2022/01/0099L21609130IM_Amostra_Dom-Quixote.pdf",
     imgSrc: 'https://m.media-amazon.com/images/I/51U-1ilSDEL._AC_UF1000,1000_QL80_.jpg',
     title: 'Cem Anos de Solidão',
     author: 'Gabriel García Márquez',
@@ -22,6 +25,7 @@ const books = [
     resume: "A história do engenhoso fidalgo Dom Quixote e de seu fiel escudeiro Sancho Pança conquista leitores geração após geração. O clássico de Miguel de Cervantes é considerado o expoente máximo da literatura espanhola e, em 2002, foi eleito por uma comissão de escritores de 54 países o melhor livro de ficção de todos os tempos. Em homenagem aos 400 anos de morte de Miguel de Cervantes, a Nova Fronteira traz ao público esta edição especial, com a obra integral em dois volumes. O texto de Cervantes é acompanhado das belíssimas ilustrações do francês Gustave Doré, um dos mais fantásticos artistas do século XIX."
   },
   {
+    pdf: "https://pnld.moderna.com.br/wp-content/uploads/2022/01/0099L21609130IM_Amostra_Dom-Quixote.pdf",
     imgSrc: 'https://m.media-amazon.com/images/I/61t0bwt1s3L._AC_UF1000,1000_QL80_.jpg',
     title: '1984',
     author: 'George Orwell',
@@ -29,6 +33,7 @@ const books = [
     resume: "A história do engenhoso fidalgo Dom Quixote e de seu fiel escudeiro Sancho Pança conquista leitores geração após geração. O clássico de Miguel de Cervantes é considerado o expoente máximo da literatura espanhola e, em 2002, foi eleito por uma comissão de escritores de 54 países o melhor livro de ficção de todos os tempos. Em homenagem aos 400 anos de morte de Miguel de Cervantes, a Nova Fronteira traz ao público esta edição especial, com a obra integral em dois volumes. O texto de Cervantes é acompanhado das belíssimas ilustrações do francês Gustave Doré, um dos mais fantásticos artistas do século XIX."
   },
   {
+    pdf: "https://pnld.moderna.com.br/wp-content/uploads/2022/01/0099L21609130IM_Amostra_Dom-Quixote.pdf",
     imgSrc: 'https://m.media-amazon.com/images/I/61ATa0Pc4AL._AC_UF1000,1000_QL80_.jpg',
     title: 'O Pequeno Príncipe',
     author: 'Antoine de Saint-Exupéry',
@@ -36,6 +41,7 @@ const books = [
     resume: "A história do engenhoso fidalgo Dom Quixote e de seu fiel escudeiro Sancho Pança conquista leitores geração após geração. O clássico de Miguel de Cervantes é considerado o expoente máximo da literatura espanhola e, em 2002, foi eleito por uma comissão de escritores de 54 países o melhor livro de ficção de todos os tempos. Em homenagem aos 400 anos de morte de Miguel de Cervantes, a Nova Fronteira traz ao público esta edição especial, com a obra integral em dois volumes. O texto de Cervantes é acompanhado das belíssimas ilustrações do francês Gustave Doré, um dos mais fantásticos artistas do século XIX."
   },
   {
+    pdf: "https://pnld.moderna.com.br/wp-content/uploads/2022/01/0099L21609130IM_Amostra_Dom-Quixote.pdf",
     imgSrc: 'https://m.media-amazon.com/images/I/71ZLavBjpRL._AC_UF1000,1000_QL80_.jpg',
     title: 'O Senhor dos Anéis',
     author: 'J.R.R. Tolkien',
@@ -43,6 +49,7 @@ const books = [
     resume: "A história do engenhoso fidalgo Dom Quixote e de seu fiel escudeiro Sancho Pança conquista leitores geração após geração. O clássico de Miguel de Cervantes é considerado o expoente máximo da literatura espanhola e, em 2002, foi eleito por uma comissão de escritores de 54 países o melhor livro de ficção de todos os tempos. Em homenagem aos 400 anos de morte de Miguel de Cervantes, a Nova Fronteira traz ao público esta edição especial, com a obra integral em dois volumes. O texto de Cervantes é acompanhado das belíssimas ilustrações do francês Gustave Doré, um dos mais fantásticos artistas do século XIX."
   },
   {
+    pdf: "https://pnld.moderna.com.br/wp-content/uploads/2022/01/0099L21609130IM_Amostra_Dom-Quixote.pdf",
     imgSrc: 'https://m.media-amazon.com/images/I/81+dpv22LGL._AC_UF1000,1000_QL80_.jpg',
     title: 'Crime e Castigo',
     author: 'Fiódor Dostoiévski',
@@ -50,6 +57,7 @@ const books = [
     resume: "A história do engenhoso fidalgo Dom Quixote e de seu fiel escudeiro Sancho Pança conquista leitores geração após geração. O clássico de Miguel de Cervantes é considerado o expoente máximo da literatura espanhola e, em 2002, foi eleito por uma comissão de escritores de 54 países o melhor livro de ficção de todos os tempos. Em homenagem aos 400 anos de morte de Miguel de Cervantes, a Nova Fronteira traz ao público esta edição especial, com a obra integral em dois volumes. O texto de Cervantes é acompanhado das belíssimas ilustrações do francês Gustave Doré, um dos mais fantásticos artistas do século XIX."
   },
   {
+    pdf: "https://pnld.moderna.com.br/wp-content/uploads/2022/01/0099L21609130IM_Amostra_Dom-Quixote.pdf",
     imgSrc: 'https://m.media-amazon.com/images/I/71mFnG3Bn3L._AC_UF1000,1000_QL80_.jpg',
     title: 'A Metamorfose',
     author: 'Franz Kafka',
@@ -57,6 +65,7 @@ const books = [
     resume: "A história do engenhoso fidalgo Dom Quixote e de seu fiel escudeiro Sancho Pança conquista leitores geração após geração. O clássico de Miguel de Cervantes é considerado o expoente máximo da literatura espanhola e, em 2002, foi eleito por uma comissão de escritores de 54 países o melhor livro de ficção de todos os tempos. Em homenagem aos 400 anos de morte de Miguel de Cervantes, a Nova Fronteira traz ao público esta edição especial, com a obra integral em dois volumes. O texto de Cervantes é acompanhado das belíssimas ilustrações do francês Gustave Doré, um dos mais fantásticos artistas do século XIX."
   },
   {
+    pdf: "https://pnld.moderna.com.br/wp-content/uploads/2022/01/0099L21609130IM_Amostra_Dom-Quixote.pdf",
     imgSrc: 'https://m.media-amazon.com/images/I/91BsZhxCRjL._AC_UF1000,1000_QL80_.jpg',
     title: 'A Revolução dos Bichos',
     author: 'George Orwell',
@@ -64,6 +73,7 @@ const books = [
     resume: "A história do engenhoso fidalgo Dom Quixote e de seu fiel escudeiro Sancho Pança conquista leitores geração após geração. O clássico de Miguel de Cervantes é considerado o expoente máximo da literatura espanhola e, em 2002, foi eleito por uma comissão de escritores de 54 países o melhor livro de ficção de todos os tempos. Em homenagem aos 400 anos de morte de Miguel de Cervantes, a Nova Fronteira traz ao público esta edição especial, com a obra integral em dois volumes. O texto de Cervantes é acompanhado das belíssimas ilustrações do francês Gustave Doré, um dos mais fantásticos artistas do século XIX."
   },
   {
+    pdf: "https://pnld.moderna.com.br/wp-content/uploads/2022/01/0099L21609130IM_Amostra_Dom-Quixote.pdf",
     imgSrc: 'https://m.media-amazon.com/images/I/91K-MrUTNOL._AC_UF1000,1000_QL80_.jpg',
     title: 'A Culpa é das Estrelas',
     author: 'John Green',
@@ -71,6 +81,7 @@ const books = [
     resume: "A história do engenhoso fidalgo Dom Quixote e de seu fiel escudeiro Sancho Pança conquista leitores geração após geração. O clássico de Miguel de Cervantes é considerado o expoente máximo da literatura espanhola e, em 2002, foi eleito por uma comissão de escritores de 54 países o melhor livro de ficção de todos os tempos. Em homenagem aos 400 anos de morte de Miguel de Cervantes, a Nova Fronteira traz ao público esta edição especial, com a obra integral em dois volumes. O texto de Cervantes é acompanhado das belíssimas ilustrações do francês Gustave Doré, um dos mais fantásticos artistas do século XIX."
   },
   {
+    pdf: "https://pnld.moderna.com.br/wp-content/uploads/2022/01/0099L21609130IM_Amostra_Dom-Quixote.pdf",
     imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKq8IwSFaD37SR9lekMV_rZLoadAJT20bGdg&s',
     title: 'Memórias Póstumas de Brás Cubas',
     author: 'Machado de Assis',
@@ -78,6 +89,7 @@ const books = [
     resume: "A história do engenhoso fidalgo Dom Quixote e de seu fiel escudeiro Sancho Pança conquista leitores geração após geração. O clássico de Miguel de Cervantes é considerado o expoente máximo da literatura espanhola e, em 2002, foi eleito por uma comissão de escritores de 54 países o melhor livro de ficção de todos os tempos. Em homenagem aos 400 anos de morte de Miguel de Cervantes, a Nova Fronteira traz ao público esta edição especial, com a obra integral em dois volumes. O texto de Cervantes é acompanhado das belíssimas ilustrações do francês Gustave Doré, um dos mais fantásticos artistas do século XIX."
   },
   {
+    pdf: "https://pnld.moderna.com.br/wp-content/uploads/2022/01/0099L21609130IM_Amostra_Dom-Quixote.pdf",
     imgSrc: 'https://m.media-amazon.com/images/I/81ibfYk4qmL._AC_UF1000,1000_QL80_.jpg',
     title: 'Harry Potter e a Pedra Filosofal',
     author: 'J.K. Rowling',
@@ -90,7 +102,7 @@ const books = [
 function addBooksToPage(filteredBooks = books) {
   // Seleciona o elemento onde a lista de livros será exibida
   const bookList = document.querySelector('.book-list');
-  
+
   // Limpa a lista de livros existente para evitar duplicação
   bookList.innerHTML = '';
 
@@ -151,7 +163,7 @@ function searchBooks() {
   const query = searchInput.value.toLowerCase();
 
   // Filtra a lista de livros com base na consulta de pesquisa
-  const filteredBooks = books.filter(book => 
+  const filteredBooks = books.filter(book =>
     book.title.toLowerCase().includes(query)
   )
 
@@ -179,6 +191,10 @@ function addDetailsBook() {
     document.getElementById('bookTitle').textContent = `Livro: ${bookData.title}`;
     document.getElementById('bookAuthor').textContent = `Autor: ${bookData.author}`;
     document.getElementById('bookDescription').textContent = `Resumo: ${bookData.resume}`;
+  
+    // Configurando o link do botão "Ler Livro" para ver o pdf
+    const readBookButton = document.getElementById('readBookButton');
+    readBookButton.href = bookData.pdf;
   } else {
     // Caso o livro não seja encontrado, exibe uma mensagem de erro
     document.getElementById('bookTitle').textContent = "Livro não encontrado";
@@ -188,7 +204,7 @@ function addDetailsBook() {
 // Adiciona eventos de carregamento do DOM para funções específicas
 document.addEventListener('DOMContentLoaded', viewDataForm); // Configura o formulário de contato quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', addDetailsBook); // Adiciona detalhes do livro quando o DOM estiver carregado
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // Adiciona livros à página ao carregar
   addBooksToPage();
 
