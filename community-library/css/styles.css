@@ -179,6 +179,7 @@ main {
 
 .flex {
     display: flex;
+    gap: 15px;
 }
 
 .book img {
