@@ -153,9 +153,27 @@ a {
 }
 
 .btn-voltar {
-    border: 1px solid #333;
-    padding: 8px 14px;
-    border-radius: 10px;
+    background-color: #4CAF50; /* Cor de fundo*/
+    border: none; /* Remove a borda padrão */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remove sublinhado do texto */
+    display: inline-block; /* Faz o botão se ajustar ao conteúdo */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: all 0.3s ease; /* Transição suave para todos os efeitos */
+    cursor: pointer; /* Muda o cursor do mouse */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.btn-voltar:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-voltar:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 main {
