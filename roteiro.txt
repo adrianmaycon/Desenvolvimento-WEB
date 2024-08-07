@@ -1,0 +1,91 @@
+Semana 1: Definição
+Objetivo: Estabelecer claramente o escopo e os requisitos do projeto.
+
+Atividades:
+
+Brainstorming Inicial: Reúna as equipes para discutir ideias e definir o tipo de projeto (site de portfólio, blog, e-commerce, etc.).
+
+Duração: 1-2 reuniões de 1-2 horas cada.
+Pesquisa e Análise: Analisar projetos semelhantes, estudar possíveis funcionalidades e definir o público-alvo.
+
+Duração: 2-3 horas.
+Definição do Escopo: Crie uma lista de requisitos e funcionalidades desejadas.
+
+Duração: 2-3 horas.
+Divisão de Tarefas: Divida as responsabilidades entre os membros da equipe para a próxima semana.
+
+Duração: 1-2 horas.
+Entregáveis:
+
+Documento com a descrição do projeto.
+Lista de requisitos e funcionalidades.
+Cronograma geral do projeto.
+Semana 2: Documentação
+Objetivo: Elaborar a documentação detalhada e planos necessários para o desenvolvimento.
+
+Atividades:
+
+Criação de Wireframes e Esboços: Desenvolva wireframes básicos para as principais páginas e funcionalidades do site.
+
+Duração: 3-4 horas.
+Plano de Implementação: Defina as tecnologias a serem usadas, estrutura do código, e ferramentas necessárias (frameworks, bibliotecas, etc.).
+
+Duração: 2-3 horas.
+Documentação de Requisitos: Formalize os requisitos em um documento claro e detalhado, incluindo casos de uso e fluxos de usuário.
+
+Duração: 3-4 horas.
+Planejamento da Comunicação: Estabeleça um plano de comunicação entre os membros da equipe, incluindo reuniões regulares e métodos de feedback.
+
+Duração: 1-2 horas.
+Entregáveis:
+
+Wireframes e esboços.
+Documento com o plano de implementação e requisitos detalhados.
+Plano de comunicação e cronograma atualizado.
+Semana 3: Design (Prototipação)
+Objetivo: Criar protótipos de alta fidelidade e definir a aparência final do site.
+
+Atividades:
+
+Desenvolvimento de Prototipos: Crie protótipos de alta fidelidade para as páginas principais usando ferramentas como Figma, Sketch, ou Adobe XD.
+
+Duração: 5-6 horas.
+Definição do Estilo Visual: Estabeleça cores, tipografia, e estilo geral do site. Desenvolva um guia de estilo se necessário.
+
+Duração: 2-3 horas.
+Feedback e Revisão: Apresente os protótipos e obtenha feedback da equipe. Realize revisões conforme necessário.
+
+Duração: 2-3 horas.
+Documentação do Design: Documente os estilos, componentes e layout para referência no desenvolvimento.
+
+Duração: 2-3 horas.
+Entregáveis:
+
+Protótipos de alta fidelidade.
+Guia de estilo e documentação do design.
+Semana 4: Desenvolvimento
+Objetivo: Desenvolver e integrar o site com base nos protótipos e na documentação.
+
+Atividades:
+
+Desenvolvimento do Front-End: Implemente o layout e os estilos definidos, utilizando HTML, CSS e JavaScript.
+
+Duração: 8-12 horas.
+Integração e Funcionalidades: Adicione e teste funcionalidades, como formulários, interatividade, e qualquer outra característica planejada.
+
+Duração: 5-8 horas.
+Testes e Depuração: Realize testes para identificar e corrigir bugs. Certifique-se de que o site é responsivo e funciona em diferentes dispositivos e navegadores.
+
+Duração: 3-5 horas.
+Preparação para a Apresentação: Organize o material de apresentação e prepare uma demonstração final do projeto.
+
+Duração: 2-3 horas.
+Entregáveis:
+
+Site funcional e testado.
+Material de apresentação.
+Dicas Adicionais:
+
+Comunicação Contínua: Utilize ferramentas de comunicação e gerenciamento de projetos (como Slack ou Trello) para manter todos atualizados.
+Reuniões Regulares: Realize reuniões rápidas ao início de cada semana para garantir que todos estejam alinhados e resolver possíveis problemas.
+Boa sorte com o projeto final! Se precisar de mais ajuda ou detalhes específicos, estou aqui para ajudar.
