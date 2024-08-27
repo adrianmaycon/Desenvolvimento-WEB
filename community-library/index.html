@@ -1,49 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Comunitária CCBJ</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="js/script.js"></script>
 </head>
-
 <body>
     <header id="cabecalho">
-        <div class="container">
-            <h1>Biblioteca Comunitária CCBJ</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicial</a></li>
-                    <li><a href="about.html">Sobre</a></li>
-                    <li><a href="contact.html">Contato</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Biblioteca Comunitária CCBJ</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="contact.html">Contato</a>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li> -->
                 </ul>
-            </nav>
-        </div>
+
+                <div style="display: flex;" class="search-container">
+                    <input class="form-control me-2"  type="text" id="searchInput" placeholder="buscar livro...">
+                    <button class="btn btn-outline-success" type="button" >Buscar</button>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
 
-    <main>
+    <main style="background-color: rgb(172, 248, 255);">
+        <!-- Carrossel -->
+        <div id="carouselExampleControls" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img style="height: 400px; background-position: center; object-fit: cover;" src="https://static.vecteezy.com/ti/fotos-gratis/t2/17323707-close-up-de-um-reptil-em-um-galho-de-arvore-contra-um-impressionante-papel-de-parede-de-fundo-natural-hd-foto.jpg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Slide 1</h5>
+                        <p>Descrição do primeiro slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img style="height: 400px; background-position: center; object-fit: cover;" src="https://services.meteored.com/img/article/inteligencia-artificial-aprende-a-reconstruir-imagens-vistas-por-pessoas-ciencia-fotos-1679175318563_1280.jpg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Slide 2</h5>
+                        <p>Descrição do segundo slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img style="height: 400px; background-position: center; object-fit: cover;" src="https://designcomcafe.com.br/wp-content/uploads/2023/10/como-criar-prompts-para-geracao-de-imagens-com-ia-1024x538.jpg" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Slide 3</h5>
+                        <p>Descrição do terceiro slide.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+
         <div class="container">
             <div class="header-main">
-                <h2>Bem-vindo á Biblioteca Comunitária</h2>
-                <p>Explore uma ampla variedade de livros disponíveis para a comunidade.
-                    Visite-nos e encontre a sua próxima leitura favorita!</p>
-                <!-- Campo de Pesquisa -->
+                <h2>Bem-vindo à Biblioteca Comunitária</h2>
+                <p>Explore uma ampla variedade de livros disponíveis para a comunidade. Visite-nos e encontre a sua próxima leitura favorita!</p>
                 <div class="search-container">
                     <input type="text" id="searchInput" placeholder="Pesquisar livros pelo título...">
                 </div>
             </div>
-
             <div class="book-list"></div>
         </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Biblioteca Comunitária. Todos os direitor reservados.</p>
+            <p>&copy; 2024 Biblioteca Comunitária. Todos os direitos reservados.</p>
         </div>
     </footer>
-</body>
 
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
