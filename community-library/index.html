@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Comunitária CCBJ</title>
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/utils.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="js/script.js"></script>
 </head>
@@ -27,20 +27,6 @@
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="contact.html">Contato</a>
                   </li>
-                  <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li> -->
                 </ul>
 
                 <div style="display: flex;" class="search-container">
@@ -52,28 +38,29 @@
           </nav>
     </header>
 
-    <main style="background-color: rgb(172, 248, 255);">
+    <main style="background-color: rgb(228, 224, 243);">
         <!-- Carrossel -->
         <div id="carouselExampleControls" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img style="height: 400px; background-position: center; object-fit: cover;" src="https://static.vecteezy.com/ti/fotos-gratis/t2/17323707-close-up-de-um-reptil-em-um-galho-de-arvore-contra-um-impressionante-papel-de-parede-de-fundo-natural-hd-foto.jpg" class="d-block w-100" alt="Slide 1">
+                    <img style="height: 300px; background-position: center; object-fit: cover;" src="https://png.pngtree.com/background/20230403/original/pngtree-old-big-library-books-shelf-vector-picture-image_2293325.jpg" class="d-block w-100" alt="Slide 1">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Slide 1</h5>
-                        <p>Descrição do primeiro slide.</p>
+                        <h5>Biblioteca Comunitária</h5>
+                        <p>Promovendo direito a leitura de forma gratuita.</p>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img style="height: 300px; background-position: center; object-fit: cover;" src="https://miro.medium.com/v2/resize:fit:10240/1*LCZNGw2pS9VUxJmqUAzYHg.jpeg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Venha descobrir a mágia</h5>
+                        <p>Escolha seu melhor livro de fantasia e leve para casa.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img style="height: 400px; background-position: center; object-fit: cover;" src="https://services.meteored.com/img/article/inteligencia-artificial-aprende-a-reconstruir-imagens-vistas-por-pessoas-ciencia-fotos-1679175318563_1280.jpg" class="d-block w-100" alt="Slide 2">
+                    <img style="height: 300px; background-position: center; object-fit: cover;" src="https://static.vecteezy.com/ti/fotos-gratis/p1/26759864-ampla-biblioteca-com-muitos-livros-e-estantes-de-livros-para-aprendendo-com-conhecimento-ai-gerado-gratis-foto.jpg" class="d-block w-100" alt="Slide 3">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Slide 2</h5>
-                        <p>Descrição do segundo slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img style="height: 400px; background-position: center; object-fit: cover;" src="https://designcomcafe.com.br/wp-content/uploads/2023/10/como-criar-prompts-para-geracao-de-imagens-com-ia-1024x538.jpg" class="d-block w-100" alt="Slide 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Slide 3</h5>
+                        <h5>Agende sua visita guiada</h5>
                         <p>Descrição do terceiro slide.</p>
                     </div>
                 </div>
@@ -88,21 +75,73 @@
             </a>
         </div>
 
-        <div class="container">
-            <div class="header-main">
-                <h2>Bem-vindo à Biblioteca Comunitária</h2>
-                <p>Explore uma ampla variedade de livros disponíveis para a comunidade. Visite-nos e encontre a sua próxima leitura favorita!</p>
-                <div class="search-container">
-                    <input type="text" id="searchInput" placeholder="Pesquisar livros pelo título...">
-                </div>
-            </div>
-            <div class="book-list"></div>
+        <div class="container" style="padding: 25px 0; ">
+            <div class="row row-cols-1 row-cols-md-4 g-4 book-list"></div>
         </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Biblioteca Comunitária. Todos os direitos reservados.</p>
+    <footer class="bg-dark footer" style="margin-top: 50px;">
+        <div class="footer-top py-8">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-8 pe-xxl-10">
+                        <div class="row gy-5">
+                            <div class="col-6 col-lg-4">
+                                <h5 class="text-white footer-title-01">Biblioteca Comunitária</h5>
+                                <ul class="list-unstyled footer-link-01 m-0">
+                                    <li><a class="text-white text-opacity-75" href="#">O que é?</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">Blog</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">Equipe</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">Livros</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <h5 class="text-white footer-title-01">Sobre</h5>
+                                <ul class="list-unstyled footer-link-01 m-0">
+                                    <li><a class="text-white text-opacity-75" href="#">Conhecer</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">Privacy Policy</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">Cookie Policy</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">Terms &amp; Conditions</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">Terms of Use</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <h5 class="text-white footer-title-01">Precisa de Ajuda?</h5>
+                                <ul class="list-unstyled footer-link-01 m-0">
+                                    <li><a class="text-white text-opacity-75" href="#">Contact Us</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">FAQs</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">Offers &amp; Kits</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">Get the app</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">Store locator</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="text-white footer-title-01 fs-5">Subscribe to our newsletter and get 15% off your next order.</h5>
+                        <div>
+                            <form class="d-flex flex-row mb-2 p-1 bg-white input-group"><input type="email" class="form-control rounded border-0" placeholder="Your Email"> <button class="btn btn-secondary flex-shrink-0" type="submit">Subscribe</button></form>
+                            <p class="fs-sm text-white text-opacity-75">I agree to receive Absolution newsletters</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom small py-3 border-top border-white border-opacity-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start py-1">
+                        <p class="m-0 text-white text-opacity-75">© 2022 copyright by <a class="text-reset" href="#">bootdey.com</a></p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end py-1">
+                        <ul class="nav justify-content-center justify-content-md-end list-unstyled footer-link-01 m-0">
+                            <li class="p-0 mx-3 ms-md-0 me-md-3"><a href="#" class="text-white text-opacity-75">Privace &amp; Policy</a></li>
+                            <li class="p-0 mx-3 ms-md-0 me-md-3"><a href="#" class="text-white text-opacity-75">Faq's</a></li>
+                            <li class="p-0 mx-3 ms-md-0 me-md-3"><a href="#" class="text-white text-opacity-75">Get a Quote</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
