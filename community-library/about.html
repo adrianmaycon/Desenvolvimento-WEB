@@ -1,43 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Início do documento HTML com idioma definido como inglês. -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Biblioteca Comunitária CCBJ</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres internacionais. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis, ajustando o layout à largura da tela. -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Sobre - Biblioteca Comunitária CCBJ</title> <!-- Título da página que aparece na aba do navegador. -->
+    <!-- <link rel="stylesheet" href="css/styles.css"> Vincula o arquivo CSS externo para estilizar a página. -->
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1>Biblioteca Comunitária CCBJ</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicial</a></li>
-                    <li><a href="about.html">Sobre</a></li>
-                    <li><a href="contact.html">Contato</a></li>
+    <header id="cabecalho">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Biblioteca Comunitária CCBJ</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Inicial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="about.html">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="contact.html">Contato</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="carShop.html">Loja</a>
+                  </li>
                 </ul>
-            </nav>
-        </div>
-    </header>
 
+                <div style="display: flex;" class="search-container">
+                    <input class="form-control me-2"  type="text" id="searchInput" placeholder="buscar livro...">
+                    <button class="btn btn-outline-success" type="button" >Buscar</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
     <main>
-        <div class="container">
-            <div class="header-main">
-                <h2>Sobre</h2>
+        <div class="container"> <!-- Contêiner para centralizar o conteúdo principal da página. -->
+            <div class="header-main"> <!-- Seção específica para o conteúdo da página "Sobre". -->
+                <h2>Sobre</h2> <!-- Subtítulo da seção "Sobre". -->
                 <p>A Biblioteca Comunitária foi fundada com a missão de
                     proporcionar acesso gratuito aos livros e promover a alfabetização
                     na comunidade. Oferecemos uma coleção diversificada de livros para
-                    todas as idades e interesses.</p>
+                    todas as idades e interesses.</p> <!-- Descrição da missão e coleção da biblioteca. -->
 
                 <p>Nossa biblioteca é administrada por voluntários apaixonados por livros
                     e serviço comunitário. Organizamos eventos regulares, sessões
                     de leitura e clubes do livro para envolver a comunidade e promover
-                    o amor pela leitura</p>
+                    o amor pela leitura</p> <!-- Informações sobre a administração e atividades da biblioteca. -->
             </div>
         </div>
     </main>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
