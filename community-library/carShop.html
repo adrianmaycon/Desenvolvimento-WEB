@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Comunitária CCBJ</title>
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="js/script.js"></script>
+    <style>
+        .product-card {
+        margin-bottom: 20px;
+    }
+    .cart-badge {
+        position: relative;
+        top: -10px;
+        right: -10px;
+        font-size: 0.75rem;
+    }
+    .cart-modal {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1050;
+    }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Biblioteca Comunitária CCBJ</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Inicial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="contact.html">Contato</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="carShop.html" id="cart">
+                        Loja
+                        <span class="badge bg-danger cart-badge" id="cart-count">0</span>
+                    </a>
+                </li>
+                </ul>
+
+                <div style="display: flex;" class="search-container">
+                    <input class="form-control me-2"  type="text" id="searchInput" placeholder="buscar livro...">
+                    <button class="btn btn-outline-success" type="button" >Buscar</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main style="background-color: rgb(228, 224, 243); padding-top: 30px;">    
+        <!-- Main Content -->
+        <div class="container mt-4">
+            <div class="row">
+                <!-- Product Card 1 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Produto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Produto 1</h5>
+                            <p class="card-text">R$ 99,99</p>
+                            <button class="btn btn-primary add-to-cart" data-product="Produto 1" data-price="99.99">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Produto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Produto 2</h5>
+                            <p class="card-text">R$ 129,99</p>
+                            <button class="btn btn-primary add-to-cart" data-product="Produto 2" data-price="129.99">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Produto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Produto 3</h5>
+                            <p class="card-text">R$ 79,99</p>
+                            <button class="btn btn-primary add-to-cart" data-product="Produto 3" data-price="79.99">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal do Carrinho -->
+<div class="modal fade cart-modal" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Carrinho</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group" id="cart-items">
+                    <!-- Itens do Carrinho serão adicionados aqui -->
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" id="checkout">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="bg-dark footer" style="margin-top: 50px;">
+        <div class="footer-top py-8">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-8 pe-xxl-10">
+                        <div class="row gy-5">
+                            <div class="col-6 col-lg-4">
+                                <h5 class="text-white footer-title-01">Biblioteca Comunitária</h5>
+                                <ul class="list-unstyled footer-link-01 m-0">
+                                    <li><a class="text-white text-opacity-75" href="#">O que é?</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">Blog</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">Equipe</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">Livros</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <h5 class="text-white footer-title-01">Sobre</h5>
+                                <ul class="list-unstyled footer-link-01 m-0">
+                                    <li><a class="text-white text-opacity-75" href="#">Conhecer</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">Privacy Policy</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">Cookie Policy</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">Termos &amp; Condições</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">Termos de Uso</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <h5 class="text-white footer-title-01">Precisa de Ajuda?</h5>
+                                <ul class="list-unstyled footer-link-01 m-0">
+                                    <li><a class="text-white text-opacity-75" href="#">Contact Us</a></li>
+                                    <li><a class="text-white text-opacity-75" href="#">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="text-white footer-title-01 fs-5">Faça sua inscrição.</h5>
+                        <div>
+                            <form class="d-flex flex-row mb-2 p-1 bg-white input-group">
+                                <input type="email" class="form-control rounded border-0" placeholder="Seu Email"> 
+                                <button class="btn btn-secondary flex-shrink-0" type="submit">Inscreva-se</button>
+                            </form>
+                            <p class="fs-sm text-white text-opacity-75">I agree to receive Absolution newsletters</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom small py-3 border-top border-white border-opacity-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start py-1">
+                        <p class="m-0 text-white text-opacity-75">© 2022 copyright by <a class="text-reset" href="#">bootdey.com</a></p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end py-1">
+                        <ul class="nav justify-content-center justify-content-md-end list-unstyled footer-link-01 m-0">
+                            <li class="p-0 mx-3 ms-md-0 me-md-3"><a href="#" class="text-white text-opacity-75">Privace &amp; Policy</a></li>
+                            <li class="p-0 mx-3 ms-md-0 me-md-3"><a href="#" class="text-white text-opacity-75">Faq's</a></li>
+                            <li class="p-0 mx-3 ms-md-0 me-md-3"><a href="#" class="text-white text-opacity-75">Get a Quote</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartCount = document.getElementById('cart-count');
+            let itemCount = 0;
+
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    itemCount++;
+                    cartCount.textContent = itemCount;
+                });
+            });
+        });
+    </script>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartCount = document.getElementById('cart-count');
+            const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+            let itemCount = 0;
+            const cartItems = document.getElementById('cart-items');
+    
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const product = this.getAttribute('data-product');
+                    const price = this.getAttribute('data-price');
+                    itemCount++;
+                    cartCount.textContent = itemCount;
+    
+                    // Add item to the cart modal
+                    const listItem = document.createElement('li');
+                    listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+                    listItem.innerHTML = `${product} - R$ ${price} <button class="btn btn-danger btn-sm ms-2 remove-item">Excluir</button>`;
+                    cartItems.appendChild(listItem);
+                });
+            });
+    
+            // Handle item removal
+            cartItems.addEventListener('click', function(e) {
+                if (e.target.classList.contains('remove-item')) {
+                    e.target.parentElement.remove();
+                    itemCount--;
+                    cartCount.textContent = itemCount;
+                }
+            });
+    
+            // Handle checkout button
+            document.getElementById('checkout').addEventListener('click', function() {
+                cartItems.innerHTML = '';  // Clear cart items
+                itemCount = 0;
+                cartCount.textContent = itemCount;
+                cartModal.hide();
+            });
+        });
+    </script>
+    
+</body>
+</html>
